@@ -5,7 +5,7 @@ import router from "./router";
 import store from "./store";
 import "./utils/filters.js";
 import "./styles/styles.scss";
-//EXTENAL LIBS
+//EXTERNAL LIBS
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import Vuelidate from "vuelidate";
