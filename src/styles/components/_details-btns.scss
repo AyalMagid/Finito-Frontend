@@ -1,0 +1,19 @@
+.task-right-container {
+  .task-actions {
+    button {
+      .v-watch {
+        text-align: center;
+        height: 1.25rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        width: 1.25rem;
+        color: #172b4d;
+        background-color: #61bd4f;
+        border-radius: 5px;
+      }
+    }
+    .actions-container {
+      top: auto;
+    }
+  }
+}

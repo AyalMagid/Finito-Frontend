@@ -1,0 +1,35 @@
+.task-members {
+  .members-container {
+    h3 {
+      font-size: 16px;
+    }
+  }
+}
+.member:hover {
+  cursor: pointer;
+  background-color: rgb(240, 239, 239);
+  border-radius: 5px;
+}
+
+.member-search-status {
+  h6 {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+.member-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  .member-name {
+    margin-left: 10px;
+  }
+  span {
+    font-size: 15px;
+  }
+}
+.v-member {
+  align-self: center;
+  font-size: 0.6rem;
+  margin-right: 0.9rem;
+}

@@ -1,0 +1,66 @@
+.task-attachment {
+  position: relative;
+  top: 0px;
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img-upload-preview {
+      width: 130px;
+    }
+  }
+  .status {
+    text-align: center;
+  }
+  h6{
+    text-align: center;
+  }
+  .upload-select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // button {
+    //   width: 100%;
+    //   height: 30px;
+    //   margin: 5px auto;
+    //   text-align: center;
+    //   border-radius: 3px;
+    //   outline: none;
+    //   font-family: Montserrat-Bold;
+    //   font-weight: bold;
+    //   font-size: rem(16px);
+    //   background-color: orange;
+    //   color: white;
+    // }
+  }
+  .upload-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      width: 150px;
+      height: 30px;
+      outline: none;
+      border: 1px solid black;
+      font-size: rem(13px);
+      text-align: center;
+      border-radius: 3px;
+    }
+    .add-file-btn {
+      width: 180px;
+      height: 30px;
+      margin: 5px auto;
+      text-align: center;
+      border-radius: 3px;
+      outline: none;
+      font-family: Montserrat-Bold;
+      font-weight: bold;
+      font-size: rem(16px);
+      background-color: rgb(76, 221, 39);
+      color: white;
+    }
+  }
+}

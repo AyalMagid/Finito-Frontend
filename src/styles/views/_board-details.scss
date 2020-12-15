@@ -1,0 +1,17 @@
+.board-details-container {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  .board-details {
+    padding: 6px;
+    padding-bottom: 0;
+    padding-top: 72px;
+    width: 100%;
+    .taskGroup-drop-preview {
+      background-color: rgba(150, 150, 200, 0.1);
+      border: 1px dashed #abc;
+      margin: 5px 45px 5px 5px;
+    }
+  }
+}

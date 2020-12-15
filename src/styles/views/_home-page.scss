@@ -1,0 +1,131 @@
+.home-page {
+  margin-top: rem(40px);
+  display: grid;
+  min-height: 80vh;
+  grid-template-columns:
+    minmax(2rem, 1fr)
+    minmax(auto, $break-wide)
+    minmax(2rem, 1fr);
+  > * {
+    grid-column: 2/3;
+    margin: 10px 0;
+  }
+  .create-board-container {
+    @include for-narrow-layout {
+      overflow-y: auto;
+      width: 350px;
+      min-height: 600px;
+      .create-board-imgs {
+        margin: 0 auto;
+      }
+    }
+    @include for-extra-small-layout {
+      width: 90%;
+      height: 450px;
+    }
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: min-content auto;
+    padding: rem(10px);
+    width: 425px;
+    height: 560px;
+    border-radius: 3px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    > * :not(.board-preview.full) {
+      margin: 5px 0;
+    }
+    .board-preview.full {
+      height: 90px;
+    }
+    .create-board-imgs {
+      .credits {
+        margin: 0;
+      }
+    }
+  }
+  .recent-boards-container {
+    .recent-boards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .catagory-label {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: rem(20px);
+    color: darken(#3498db, 40%);
+  }
+  .board-templates {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    font-size: 13px;
+  }
+  .template-details-container {
+    width: 750px;
+    min-height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transform: translate(-50%, 5%);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: rem(50px);
+    @include for-tablet-layout {
+      width: 600px;
+    }
+    @include for-mobile-layout {
+      width: 450px;
+    }
+    @include for-narrow-layout {
+      width: 350px;
+    }
+    .el-icon-back {
+      top: 10px;
+      right: 10px;
+      position: absolute;
+      font-size: rem(20px);
+    }
+    .template-img-container {
+      width: 100%;
+    }
+    .templdate-content-container {
+      background-color: #fff;
+
+      text-align: center;
+      width: 100%;
+      padding: rem(15px);
+    }
+    .template-features-container {
+      display: grid;
+      max-width: 580px;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
+      li {
+        align-self: center;
+        margin: 10px 0;
+        i {
+          font-size: 20px;
+        }
+      }
+      li > * {
+        display: block;
+        text-align: center;
+      }
+    }
+    button {
+      margin-top: 40px;
+    }
+  }
+  .template-preview-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

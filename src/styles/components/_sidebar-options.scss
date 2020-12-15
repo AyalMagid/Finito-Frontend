@@ -1,0 +1,32 @@
+.sidebar-menu-container {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  > img,
+  i {
+    margin-right: 10px;
+  }
+  img {
+    width: 16px;
+  }
+  transition: all 0.3s ease-in-out;
+  &.menu-action {
+    &:hover {
+      background-color: rgba(9, 30, 66, 0.13);
+    }
+  }
+  //   &.menu-activity {
+  //     border-bottom: 1px solid black;
+  //   }
+}
+.menu-login-btn {
+  display: none;
+  background-color: #3498db;
+  color: #fff;
+  font-family: inherit;
+  margin: 5px;
+  padding: 5px 10px;
+  @include for-narrow-layout {
+    display: inline-block;
+  }
+}

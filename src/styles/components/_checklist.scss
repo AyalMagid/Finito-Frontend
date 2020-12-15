@@ -1,0 +1,118 @@
+.checklist-wrapper {
+  margin-bottom: 15px;
+  .checklist-header {
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    i {
+      position: absolute;
+      top: 0;
+      left: 4px;
+    }
+    h4 {
+      margin-inline-start: 40px;
+    }
+    .checklist-remove-btn {
+      position: absolute;
+      border-radius: 5px;
+      top: 0;
+      right: 0;
+      height: 35px;
+      font-family: Montserrat-Bold;
+      font-weight: bold;
+      border: none;
+      background-color: rgba(9, 30, 66, 0.04);
+      color: #172b4d;
+    }
+  }
+  .checklist-progress-bar {
+    margin-bottom: 5px;
+    .el-progress.el-progress--line {
+      position: relative;
+      .el-progress__text {
+        position: absolute;
+        left: 17px;
+        top: 7px;
+        font-size: 12px;
+      }
+    }
+    .el-progress__text {
+      margin-left: -15px;
+    }
+    .el-progress-bar__outer {
+      height: 6px;
+      width: 410px;
+      margin-inline-start: 40px;
+      @include for-mobile-layout {
+        width: 307px;
+      }
+    }
+  }
+  .checklist-container {
+    > * {
+      margin: 0 5px 6px 2px;
+      font-size: rem(11px);
+      label {
+        margin-inline-start: 15px;
+      }
+      &.list-item {
+        display: grid;
+        grid-template-columns: 5% 77% 5%;
+        align-items: center;
+      }
+      > i {
+        margin-inline-end: 80px;
+      }
+    }
+    .check-item.isDone {
+      text-decoration: line-through;
+    }
+  }
+  .add-section {
+    i {
+      margin: 6px 0 0 10px;
+      padding: 2px;
+      font-size: 25px;
+    }
+  }
+  .add-item-btn {
+    font-size: rem(11px);
+    background-color: rgba(9, 30, 66, 0.04);
+    padding: 6px 12px;
+    height: 35px;
+    margin: 5px 0 0 5px;
+    margin-inline-start: 40px;
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    color: #172b4d;
+    transition: all 0.2s;
+    &:hover {
+      background-color: rgba(91, 91, 92, 0.166);
+    }
+    &.addIsOpen {
+      background-color: #5aac44;
+      &:hover {
+        background-color: #5aac44;
+      }
+    }
+
+    cursor: pointer;
+  }
+  .new-item-label:hover {
+    background-color: rgb(224, 224, 224);
+  }
+  .add-item {
+    input {
+      width: 77%;
+      height: 30px;
+      margin-inline-start: 40px;
+      border-radius: 3px;
+      padding-left: 5px;
+    }
+    i {
+      font-size: 18px;
+      margin-inline-end: 49px;
+      margin-top: 4px;
+    }
+  }
+}

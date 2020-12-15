@@ -1,0 +1,18 @@
+.task-duedate {
+  .el-date-editor {
+    margin: 10px 0;
+    width: 100% !important;
+  }
+  position: relative;
+
+  .task-duedate-btns-container {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      width: 35%;
+      padding: 10px 20px;
+    }
+  }
+}

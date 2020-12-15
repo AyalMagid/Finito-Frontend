@@ -1,0 +1,81 @@
+.add-task-container {
+  width: 255px;
+  padding: 0;
+  display: flex;
+  align-self: start;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3px;
+  &:hover {
+    background-color: rgba($task-group-color, 0.5);
+  }
+  span {
+    color: $faded-cta-color;
+    margin-left: 3px;
+    font-size: rem(12px);
+  }
+  .add-task-left-content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 5px 0 5px 3px;
+    border-radius: 5px;
+    font-size: rem(14px);
+    align-items: center;
+
+    &:hover {
+      background-color: darken($task-group-color, 5%);
+    }
+    .task-icon {
+      font-size: rem(16px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .screen-icon {
+      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: rem(17px);
+    }
+  }
+  .add-task-content-container {
+    background-color: $task-group-color;
+    width: 100%;
+    .add-task-actions {
+      width: 254px;
+    }
+    textarea {
+      display: block;
+      border: none;
+      resize: vertical;
+      margin: 5px 0;
+      background-color: #fff;
+      padding: 6px 8px 2px;
+      border-radius: 5px;
+      font-family: Montserrat;
+      width: 256px;
+      outline: none;
+      box-shadow: 0px 1px 0px 0px rgba(171, 171, 171, 1);
+    }
+    i {
+      font-size: rem(25px);
+      padding: 6px 0;
+    }
+    button {
+      padding: 3px 10px;
+      font-family: inherit;
+      border-radius: 3px;
+      background-color: #232323;
+      color: #fff;
+      border: none;
+      outline: none;
+      height: 30px;
+      align-self: center;
+      &.editActive {
+        background-color: #5aac44;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+/* Media queries Breakpoint mixins */
+
+@mixin for-extra-small-layout {
+  @media (max-width: $break-extra-small) {
+    @content;
+  }
+}
+@mixin for-narrow-layout {
+  @media (max-width: $break-narrow) {
+    @content;
+  }
+}
+
+@mixin for-mobile-layout {
+  @media (max-width: $break-mobile-normal) {
+    @content;
+  }
+}
+@mixin for-tablet-layout {
+  @media (max-width: $break-tablet) {
+    @content;
+  }
+}
+@mixin for-normal-layout {
+  @media (max-width: $break-normal) {
+    @content;
+  }
+}
+
+@mixin for-wide-layout {
+  @media (max-width: $break-wide) {
+    @content;
+  }
+}
+
+/* Media  Mixins */
+
+//aspect ratio mixin
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+//STYLE-MIXIN
+
+@mixin cmp-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid #5b054c;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 8px;
+  .fas {
+    padding: 10px;
+    font-size: rem(30px);
+    position: absolute;
+    top: 10px;
+    right: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      right: 6px;
+    }
+  }
+}

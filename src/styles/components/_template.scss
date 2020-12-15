@@ -1,0 +1,59 @@
+.template-container {
+  min-height: 220px;
+  border-radius: 3px;
+  align-self: flex-start;
+  position: relative;
+  background-color: #fff;
+
+  .template-img-container {
+    position: relative;
+  }
+  .template-content-container {
+    text-align: left;
+    padding: 10px 5px;
+    h5 {
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
+  }
+  img {
+    border-radius: 3px;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .template-header {
+    font-size: rem(16px);
+    margin: 10px 0;
+    font-weight: 600;
+  }
+  p {
+    margin: 0;
+  }
+  i {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    font-size: 3rem;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 3;
+  }
+  span {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    left: 0;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 5;
+    font-weight: 700;
+    opacity: 0;
+  }
+}

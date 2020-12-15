@@ -1,0 +1,106 @@
+.site-block {
+  margin-bottom: rem(20px);
+}
+
+// Aspect ratios
+
+.ratio-16-9 {
+  @include aspect-ratio(100, 56);
+}
+
+.ratio-square {
+  @include aspect-ratio(100, 100);
+}
+
+.ratio-card {
+  @include aspect-ratio(100, 80);
+}
+
+.ratio-poster {
+  @include aspect-ratio(100, 150);
+}
+
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.col-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column-layout > *:not(:last-child) {
+  margin-bottom: 7.5px;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-start {
+  align-items: flex-start;
+}
+.flex-end {
+  align-items: flex-end;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.text-center {
+  text-align: center;
+}
+
+.clean-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-margin {
+  margin-right: 9px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.btn-primary {
+  padding: 5px 10px;
+  font-family: inherit;
+  background-color: $btn-primary-color;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  &.remove {
+    background-color: #e63946;
+    &:hover {
+      background-color: darken(#e63946, 10%);
+    }
+  }
+  &.large {
+    padding: 10px 20px;
+  }
+  &.full-width {
+    margin: 5px 0;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  &:hover {
+    background-color: darken($btn-primary-color, 10%);
+  }
+}

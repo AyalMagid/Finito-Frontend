@@ -1,0 +1,40 @@
+.colors-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .color {
+    border-radius: 3px;
+    margin: 5px 0;
+    width: 100%;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    color: #fff;
+    font-weight: 600;
+  }
+  i {
+    color: #fff;
+    right: 15px;
+    position: absolute;
+    cursor: pointer;
+    font-size: rem(14px);
+    display: block;
+    text-align: center;
+  }
+  .unique-color {
+    background-color: var(--color);
+  }
+  .unique-color:hover {
+    box-shadow: 0 -5px var(--hover-color);
+  }
+  button {
+    width: 100%;
+  }
+}

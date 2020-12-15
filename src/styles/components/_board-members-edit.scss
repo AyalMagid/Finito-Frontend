@@ -1,0 +1,21 @@
+.board-members-edit {
+  position: relative;
+  color: black;
+  .members-container {
+    .member {
+      position: relative;
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+      padding:10px;
+      align-items: center;
+      h4 {
+        font-size: 16px;
+        margin-inline-start: 10px;
+        justify-self: center;
+      }
+      i {
+        margin: 0;
+      }
+    }
+  }
+}

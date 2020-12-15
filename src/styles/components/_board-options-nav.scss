@@ -1,0 +1,129 @@
+.board-options {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  height: 41px;
+  top: 45px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 0;
+  padding-bottom: 18px;
+  z-index: 20;
+
+  .left-side {
+    margin-inline-start: 5px;
+    .board-members {
+      align-self: center;
+      > * {
+        margin-inline-start: 5px;
+      }
+      i:not(.el-icon-check) {
+        background-color: rgb(206, 206, 206);
+        border-radius: 50%;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        color: black;
+        transition: all 0.3s;
+        padding: 2px;
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+    }
+    span {
+      max-width: 100%;
+    }
+    input {
+      @include for-narrow-layout {
+        width: 158px;
+      }
+      background-color: #ffffff52;
+      border: none;
+      padding: 5px;
+      margin: 5px;
+      align-self: center;
+      height: 32px;
+      color: white;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 18px;
+      width: 270px;
+      @include for-narrow-layout{
+        width: 150px;
+      }
+      &:focus {
+        color: black;
+        background-color: white;
+      }
+      &:hover {
+        background-color: #ffffff52;
+      }
+    }
+  }
+  .right-side {
+    .el-icon-pie-chart {
+      margin-right: 0px;
+    }
+    &:last-child {
+      margin-right: 12px;
+    }
+    display: flex;
+    align-items: center;
+    .notification-button {
+      position: relative;
+      .red-circle {
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        width: 8px;
+        height: 8px;
+        background-color: #e63946;
+        border-radius: 100%;
+      }
+    }
+    button {
+      background-color: rgb(206, 206, 206);
+      border-radius: 50%;
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      color: black;
+      transition: all 0.3s;
+      padding: 2px;
+      margin: 2px;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+      }
+    }
+    .logged-user-status {
+      margin-inline-start: 5px;
+    }
+
+    .bgSelector {
+      color: black;
+      position: absolute;
+      bottom: 0;
+      right: 19%;
+      .imgs-container {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        img {
+          cursor: pointer;
+          width: 130px;
+          height: 100px;
+          margin: 2px;
+        }
+      }
+    }
+  }
+}

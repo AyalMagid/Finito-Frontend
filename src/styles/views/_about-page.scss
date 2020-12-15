@@ -1,0 +1,50 @@
+.about-container {
+  padding-top: 45px;
+  min-height: 100vh;
+  display: flex;
+  max-width: 750px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  @include for-extra-small-layout {
+    flex-direction: column;
+  }
+
+  .about-content-container {
+    margin: 0 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h3 {
+      font-family: Montserrat-Bold;
+      color: #0a2639;
+      margin-top: 5px;
+      @include for-narrow-layout {
+        font-size: rem(16px);
+      }
+    }
+    img {
+      border-radius: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    i {
+      margin: 5px;
+      font-size: 25px;
+    }
+    .fa-linkedin {
+      background-color: #fff;
+      color: #0077b5;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    .fa-github-sqaure {
+      color: #333;
+      background-color: #fff;
+    }
+  }
+}
